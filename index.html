@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First WebSite</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My WebSite</h1>
+      <p>This is my first HTML + CSS website.</p>
+    </header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="Profile.jpg" alt="Profile Picture!" />
+        </div>
+        <div class="about-text">
+          <div class="about-card">
+            <p>
+              Hi, I'm <strong>Lavanya JN</strong> I'm a Computer Science student at BIET College, 
+              passionate about technology and problem-solving. 
+              Currently sharpening my skills in Python and Java,
+               I enjoy exploring the world of coding and building projects that challenge me to think creatively.
+               I'm always to learn new tools, collaborate with others, and grow as a developer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Student Gallery</h2>
+      <img
+        src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&auto=format"
+        alt="Student studying"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&auto=format"
+        alt="Students working"
+      />
+    </section>
+    <section id="contact"></section>
+    <h2>Contact Us</h2>
+    <form>
+      <label>Name<input type="text" /></label><br /><br />
+      <label>Email<input type="email" /></label><br /><br />
+      <textarea placeholder="Your Message"></textarea><br /><br />
+      <button type="submit">Send</button>
+    </form>
+    <footer>
+      <p>© 2025 My Website</p>
+    </footer>
+  </body>
+</html>

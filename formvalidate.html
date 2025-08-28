@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Validation Using Java Script</title>
+  </head>
+  <body>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="username" placeholder="Enter Name" />
+      <input type="email" id="email" placeholder="Enter Email" />
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      function validateForm() {
+        let name = document.getElementById("username").value;
+        let email = document.getElementById("email").value;
+
+        if (name === "" || email == "") {
+          alert("All fields are required");
+          return false; // stop form submission
+        }
+        alert("Submission Successful");
+        return true;
+      }
+    </script>
+  </body>
+</html>
